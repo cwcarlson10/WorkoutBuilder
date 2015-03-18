@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'instructions/new'
+
+  get 'instructions/edit'
+
   root 'exercises#index'
 
   resources :exercises
