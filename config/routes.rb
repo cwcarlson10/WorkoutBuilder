@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'legs/index'
+
+  get 'legs/show'
+
+  get 'legs/new'
+
+  get 'legs/edit'
+
   root 'exercises#index'
 
   resources :exercises
