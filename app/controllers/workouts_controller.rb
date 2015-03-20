@@ -33,7 +33,7 @@ class WorkoutsController < ApplicationController
   end
 
   def destroy
-    @workout.destroy
+    @workout.delete
     redirect_to @workouts
   end
 
