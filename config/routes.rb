@@ -1,14 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'legs/index'
+  root 'static_pages#home'
 
-  get 'legs/show'
+  get 'static_pages/about'
 
-  get 'legs/new'
-
-  get 'legs/edit'
-
-  root 'exercises#index'
+  get 'static_pages/contact'
 
   resources :exercises
 
