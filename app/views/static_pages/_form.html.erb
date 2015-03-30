@@ -1,0 +1,9 @@
+<h1>Build a Workout</h1>
+
+<%= simple_form_for @exercises do |f| %>
+
+  <%= f.input :muscle_group, as: :select, collection: Exercise.quads %>
+
+  <%= f.submit %>
+
+<% end %>
