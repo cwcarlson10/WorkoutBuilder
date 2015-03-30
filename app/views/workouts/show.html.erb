@@ -1,2 +1,12 @@
-<h1>Workouts#show</h1>
-<p>Find me in app/views/workouts/show.html.erb</p>
+<h1>Workout</h1>
+
+
+<%= @workout.name %>
+
+<% @workout.instructions.each do |r| %>
+  <%= r.exercise.name %>
+  <%= r.exercise.description %>
+  <%= r.sets %>
+  <%= r.reps %>
+<% end %>
+<%= link_to "Edit", edit_workout_path(@workout) %>

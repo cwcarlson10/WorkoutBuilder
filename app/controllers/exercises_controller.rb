@@ -1,5 +1,5 @@
 class ExercisesController < ApplicationController
-  before_action :set_athlete, only:[:show, :edit, :update, :destroy]
+  before_action :set_exercise, only:[:show, :edit, :update, :destroy]
 
   def index
     @exercises = Exercise.all
@@ -40,7 +40,7 @@ class ExercisesController < ApplicationController
   private
 
     def exercise_params
-      params.require(:exercise).permit(:name, :description)
+      params.require(:exercise).permit(:name, :description, :muscle_group)
     end
 
     def set_exercise

@@ -1,0 +1,17 @@
+<div class="nested_fields">
+  <% @exercises = Exercise.all %>
+  <% @quads = Exercise.quads %>
+  <% @hamstrings = Exercise.hamstrings %>
+  <% @calves = Exercise.calves %>
+
+    <%= f.label :exercise_id, collection: @quads, :label_method => :name, :value_method => :id, label: 'Quads'  %>
+    <%= f.input :sets, label: 'sets'  %>
+    <%= f.input :reps, label: 'reps'  %>
+    <%# f.label :exercise_id, collection: @hamstrings, :label_method => :name, :value_method => :id, label: 'Hamstrings'  %>
+    <%# f.input :sets, label: 'sets'  %>
+    <%# f.input :reps, label: 'reps'  %>
+    <%# f.label :exercise_id, collection: @calves, :label_method => :name, :value_method => :id, label: 'Calves'  %>
+    <%# f.input :sets, label: 'sets'  %>
+    <%# f.input :reps, label: 'reps'  %>
+
+</div>

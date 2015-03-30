@@ -1,0 +1,11 @@
+<%= simple_form_for(@workout) do |f| %>
+  <%= f.input :name %>
+
+  <%= f.simple_fields_for :instructions do |instruction| %>
+    <%= render 'instruction_fields', :f => instruction %>
+  <% end %>
+
+  <%# link_to_add_association 'Add an Exercise', f, :instructions %>
+
+  <%= f.submit %>
+<% end %>
