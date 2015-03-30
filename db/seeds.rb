@@ -9,7 +9,7 @@
 Exercise.create!(
   name: 'Plank',
   description: 'Get into a position on the floor supporting your weight on your forearms and toes. Arms are bent and directly below the shoulder.  Keep your body straight at all times and hold this position as long as possible. To increase difficulty an arm or leg can be raised while performing this exercise.',
-  muscle_group: 'upper_core, lower_core'
+  muscle_group: 'upper_core'
   )
 Exercise.create!(
   name: 'Side Crunch',
@@ -19,7 +19,7 @@ Exercise.create!(
 Exercise.create!(
   name: 'Sit-ups',
   description: "Lie on your back with your legs straight and arms at your sides, keeping your elbows bent at 90 degrees. As you sit up, twist your upper body to the left and bring your left knee toward your right elbow while you swing your left arm back. Lower your body to the starting position, and repeat to your right. That's 1 rep..",
-  muscle_group: 'upper_core, lower_core'
+  muscle_group: 'upper_core'
   )
 Exercise.create!(
   name: 'Push ups',
@@ -39,22 +39,25 @@ Exercise.create!(
 Exercise.create!(
   name: 'Squats',
   description: 'Go now slowly down, till your thighs are parallel with the floor, not lower. The knees point outwards, your butt, out. Make a small pause of 1 second and with as much energy as you can, push the weight up. Make a pause of 2 seconds and repeat.',
-  muscle_group: 'quads, glutes'
+  muscle_group: 'quads'
+
   )
 Exercise.create!(
   name: 'Leg Curls',
   description: 'Lay on a bench and put your calves behind the leg holder (better if they are hold on around the lower calves). Hold a grip on the bars to make sure the body is firmly in place. Bend your legs bringing the weight up, go slowly back. During the exercise the body should not move, all work is done by the legs.',
   muscle_group: 'hamstrings'
+
   )
 Exercise.create!(
   name: 'Standing calf raises',
   description: "Get onto the calf raises machine, you should able to completely push your calves down. Stand straight, don't make a hollow back and don't bend your legs. Pull yourself up as high as you can. Make a small pause of 1 - 2 seconds and go slowly down.",
   muscle_group: 'calves'
+
   )
 Exercise.create!(
   name: 'Pull-ups',
   description: 'Grab the pull up bar with a wide grip, the body is hanging freely. Keep your chest out and pull yourself up till your chin reaches the bar or it touches your neck, if you want to pull behind you. Go with a slow and controlled movement down, always keeping the chest out',
-  muscle_group: 'lats, romboids'
+  muscle_group: 'lats'
   )
 Exercise.create!(
   name: 'Shrugs',
